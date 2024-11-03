@@ -1,16 +1,106 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Personal | Anthony Gab Terescu - agabt</title>
-  <link rel="stylesheet" href="src/css/style.css">
-  <script src="src/js/main.js" defer type="module"></script>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Portfolio Personal | Anthony Gab Terescu - agabt</title>
+	<link rel="stylesheet" href="src/css/common.css">
+	<link rel="stylesheet" href="src/css/about.css">
+	<script src="src/js/main.js" defer type="module"></script>
 </head>
 
 <body>
+	<header class="navbar-container">
+		<nav class="navbar">
+			<a class="nav-item" id="home-nav" href="#home">
+				<span class="nav-item-icon"><i class="bi bi-house-door"></i></span>
+				<span class="nav-item-text">Home</span>
+			</a>
+			<a class="nav-item" id="about-nav" href="#about">
+				<span class="nav-item-icon"><i class="bi bi-file-person"></i></span>
+				<span class="nav-item-text">About</span>
+			</a>
+			<a class="nav-item" id="projects-nav" href="#projects">
+				<span class="nav-item-icon"><i class="bi bi-code-slash"></i></span>
+				<span class="nav-item-text">Projects</span>
+			</a>
+			<a class="nav-item" id="portfolio-nav" href="#portfolio">
+				<span class="nav-item-icon"><i class="bi bi-suitcase-lg"></i></span>
+				<span class="nav-item-text">Portfolio</span>
+			</a>
+		</nav>
+	</header>
 
+	<main>
+		<section class="tab-item" id="home">Home</section>
+
+		<section class="tab-item" id="about">
+			<header class="header-about">
+				<h1 class="about-title">Hello, I'm <span id="myName">Anthony</span></h1>
+				<h2 class="about-subtitle">Full Stack Web Developer based in Spain</h2>
+			</header>
+
+			<main class="content-about">
+				<div>
+					<h2><i class="bi bi-person-fill-check"></i> Bio</h2>
+					<div>
+						<p>
+							My name is Anthony Gab. I'm a full stack <span class="important-text">web developer</span>
+							currently studying. I'm based in <span class="important-text">Spain 🇪🇸</span> and I'm
+							studying
+							at Es Liceu school.
+						</p>
+
+						<p>
+							Some interesting things I did on my current short career were developing a full webpage as a
+							project with <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a>,
+							getting outstaing grades, and travelling to the <span
+								class="important-text">Netherlands</span>
+							to do work practices.
+						</p>
+
+						<p>
+							As for I have planned for the future is to give the best from myself and achieve great
+							things
+							and <span class="important-text">develop something awesome.</span>
+						</p>
+					</div>
+
+				</div>
+
+				<div>
+					<h2><i class="bi bi-list-ul"></i> Interests</h2>
+					<ul class="interests-list">
+						<li><i class="bi bi-code-slash"></i> Software development</li>
+						<li><i class="bi bi-dpad-fill"></i> Videogames</li>
+						<li><i class="bi bi-lightbulb-fill"></i> Always learn something</li>
+						<li><i class="bi bi-car-front"></i> Cars (basic)</li>
+						<li><i class="bi bi-robot"></i> Artificial Inteligence</li>
+					</ul>
+				</div>
+
+				<div>
+					<h2><i class="bi bi-suitcase-lg-fill"></i> Jobs</h2>
+					<p>
+						I'm currently interested on listening to job offers regarding web development either frontend,
+						backend, or full stack.
+					</p>
+
+					<p>
+						I can work from home if the company isn't easly reacheable.
+					</p>
+				</div>
+
+			</main>
+
+		</section>
+
+		<section class="tab-item" id="projects">Projects</section>
+
+		<section class="tab-item" id="portfolio">Portfolio</section>
+
+	</main>
 </body>
 
 </html>
