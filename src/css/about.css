@@ -1,0 +1,92 @@
+#myName {
+    color: transparent;
+    background: linear-gradient(45deg, yellow, lightyellow, yellow, lightyellow, yellow, lightyellow);
+    background-clip: text;
+    background-size: 200% 200%;
+    animation: gradient 2s linear infinite;
+}
+
+.about-title {
+    margin-top: 2dvh;
+    margin-bottom: 4dvh;
+    font-size: 8rem;
+    text-align: center;
+}
+
+.about-subtitle {
+    text-align: center;
+    text-wrap: balance;
+    font-size: 2rem;
+}
+
+.header-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-about {
+    margin-top: 8dvh;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2dvh;
+    width: 65vw;
+
+    & div {
+        width: 90%;
+    }
+
+    & div h2 i {
+        margin-right: 8px;
+    }
+}
+
+
+.important-text {
+    font-weight: bold;
+    color: rgb(255, 255, 130);
+    font-family: ui-monospace, monospace;
+    margin-inline: 4px;
+}
+
+.interests-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2dvh;
+    padding: 0;
+
+    * {
+        width: 85%;
+    }
+
+    i {
+        margin-right: 8px;
+    }
+}
+
+@keyframes gradient {
+    from {
+        background-position: 100% 0%;
+    }
+
+    to {
+        background-position: 0% 0%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-title {
+        font-size: 5.5rem;
+    }
+
+    .content-about {
+        width: 100%;
+    }
+}
