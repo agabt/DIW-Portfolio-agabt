@@ -17,4 +17,6 @@ window.addEventListener("hashchange", () => {
 	$newActiveNavItem.classList.add("active-nav");
 	$activeSection = $newActiveSection;
 	$activeNavItem = $newActiveNavItem;
+
+	window.scrollTo(0, 0);
 });
