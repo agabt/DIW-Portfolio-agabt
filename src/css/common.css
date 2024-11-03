@@ -32,6 +32,7 @@ body {
 	border: 1px solid #666;
 	border-radius: 16px;
 	height: 6dvh;
+	min-height: 50px;
 }
 
 .nav-item {
