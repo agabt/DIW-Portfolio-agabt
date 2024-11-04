@@ -1,0 +1,288 @@
+:root {
+    --html-color: rgb(212, 69, 59);
+    --html-color-darker: rgb(163, 53, 45);
+    --js-color: rgb(195, 190, 0);
+    --js-color-darker: rgb(155, 147, 0);
+    --json-color: rgb(168, 173, 0);
+    --json-color-darker: rgb(139, 143, 0);
+    --css-color: rgb(0, 120, 220);
+    --css-color-darker: rgb(0, 88, 160);
+    --bootstrap-color: rgb(97, 0, 200);
+    --bootstrap-color-darker: rgb(76, 0, 158);
+    --ai-color: rgb(215, 215, 215);
+    --ai-color-darker: rgb(150, 150, 150);
+    --jquery-color: rgb(59, 141, 255);
+    --jquery-color-darker: rgb(59, 106, 193);
+    --sql-color: rgb(0, 150, 0);
+    --sql-color-darker: rgb(0, 110, 0);
+    --php-color: rgb(34, 63, 255);
+    --php-color-darker: rgb(23, 44, 180);
+    --java-color: rgb(128, 62, 0);
+    --java-color-darker: rgb(98, 47, 0);
+}
+
+/* Copied from home and about.css home/about title */
+
+.projects-title {
+    margin-top: 2dvh;
+    margin-bottom: 4dvh;
+    font-size: 8rem;
+    text-align: center;
+}
+
+/* Copied from home.css and about.css content home/about */
+
+.content-projects {
+    margin-top: 8dvh;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2dvh;
+    width: 65vw;
+
+    &>div {
+        width: 90%;
+    }
+
+    & div h2 i {
+        margin-right: 8px;
+    }
+}
+
+/* Copied from home.css cards container */
+
+.projects-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    /* * To remove * */
+    /* align-items: center; */
+
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5vh;
+}
+
+/* Copied from home.css cards */
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 16px;
+    width: calc(50% - 5vh);
+    border: 2px solid black;
+
+    /* * Changed from the original 👇 * */
+    aspect-ratio: 1/1;
+
+    background-color: darkblue;
+}
+
+/* Copied from home.css card header */
+
+.project-card-header {
+    display: block;
+    color: inherit;
+
+    /* * Changed from the original 👇 * */
+    height: 60%;
+
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color: rgb(0, 0, 200);
+
+    display: flex;
+    flex-direction: column;
+
+    /* * Changed from the original 👇 * */
+    justify-content: start;
+
+    align-items: center;
+
+    transition: background-color .2s ease-in-out;
+
+    & p {
+        text-align: center;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+}
+
+.text-with-background {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+    & p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(0, 0, 0, .3);
+        padding: 2% 5%;
+        border-radius: 4px;
+        margin: 0;
+    }
+}
+
+.card-header-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .8;
+    filter: blur(4px);
+}
+
+.project-card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-block: 4%;
+
+    &>* {
+        width: 95%;
+    }
+}
+
+.pins-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    column-gap: 0.5vh;
+}
+
+.clip {
+    border: 2px solid #2f2f2f;
+    font-size: smaller;
+    padding: 2% 5%;
+    background-color: #3f3f3f;
+    border-radius: 20px;
+    margin: 1%;
+}
+
+.clip-html {
+    background-color: var(--html-color);
+    border-color: var(--html-color-darker);
+}
+
+.clip-js {
+    background-color: var(--js-color);
+    border-color: var(--js-color-darker);
+}
+
+.clip-json {
+    background-color: var(--json-color);
+    border-color: var(--json-color-darker);
+}
+
+.clip-css {
+    background-color: var(--css-color);
+    border-color: var(--css-color-darker);
+}
+
+.clip-bootstrap {
+    background-color: var(--bootstrap-color);
+    border-color: var(--bootstrap-color-darker);
+}
+
+.clip-ai {
+    background-color: var(--ai-color);
+    border-color: var(--ai-color-darker);
+    color: black;
+}
+
+.clip-jquery {
+    background-color: var(--jquery-color);
+    border-color: var(--jquery-color-darker);
+}
+
+.clip-sql {
+    background-color: var(--sql-color);
+    border-color: var(--sql-color-darker);
+}
+
+.clip-php {
+    background-color: var(--php-color);
+    border-color: var(--php-color-darker);
+}
+
+.clip-java {
+    background-color: var(--java-color);
+    border-color: var(--java-color-darker);
+}
+
+.project-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1vh;
+}
+
+.btn {
+    width: 100%;
+    display: block;
+    color: inherit;
+    padding: 4%;
+    border-radius: 16px;
+    background-color: #5f5f5f;
+    text-align: center;
+
+    transition: box-shadow .2s ease-out;
+
+    & i {
+        margin-right: 8px;
+    }
+}
+
+.website {
+    background: radial-gradient(#5f5f5f, #4f4f4f);
+}
+
+.github {
+    background: radial-gradient(#222, black);
+}
+
+/* Copied from home.css and about.css */
+
+@media screen and (max-width: 768px) {
+
+    /* From home.css */
+    .project-card {
+        width: 100%;
+    }
+
+    /* From home.css and about.css */
+
+    .projects-title {
+        font-size: 5.5rem;
+    }
+
+    /* From home.css and about.css */
+
+    .content-projects {
+        width: 100%;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .github:hover {
+        box-shadow: 0 0 5px #1f1f1f, 0 0 25px #1f1f1f;
+    }
+
+    .website:hover {
+        box-shadow: 0 0 5px #6f6f6f, 0 0 25px #6f6f6f;
+    }
+}
