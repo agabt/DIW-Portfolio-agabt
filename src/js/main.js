@@ -20,3 +20,20 @@ window.addEventListener("hashchange", () => {
 
 	window.scrollTo(0, 0);
 });
+
+// Auto Typing
+const autoText = new AutoTyping({
+	id: "auto-typed-text",
+	typeText: [
+		"User",
+		"Human",
+		"Student",
+		"Teacher",
+		"Unknown",
+		"Recruiter",
+		"Junior",
+		"Senior",
+	],
+	textColor: "#f5f5f5",
+	cursorColor: "#f5f5f5",
+}).init();
