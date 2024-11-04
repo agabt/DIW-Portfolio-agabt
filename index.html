@@ -4,9 +4,12 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="theme-color" content="#000023">
 	<title>Portfolio Personal | Anthony Gab Terescu - agabt</title>
 	<link rel="stylesheet" href="src/css/common.css">
+	<link rel="stylesheet" href="src/css/home.css">
 	<link rel="stylesheet" href="src/css/about.css">
+	<script src="node_modules/autotyping/dist/AutoTyping.min.js"></script>
 	<script src="src/js/main.js" defer type="module"></script>
 </head>
 
@@ -33,7 +36,103 @@
 	</header>
 
 	<main>
-		<section class="tab-item" id="home">Home</section>
+		<section class="tab-item" id="home">
+			<header class="header-home">
+				<h1 class="home-title">
+					Welcome
+					<div id="auto-typed-text"></div>
+				</h1>
+			</header>
+
+			<main class="content-home">
+				<div>
+					<h2><i class="bi bi-text-left"></i> Summary</h2>
+
+					<p>
+						In this website you'll find information about me (Anthony Gab), some projects I worked on and my
+						contact info.
+					</p>
+
+					<p>
+						Feel free to investigate everything and if you want, contact me to give your feedback.
+					</p>
+				</div>
+
+				<div>
+					<h2><i class="bi bi-envelope-fill"></i> Contact Me</h2>
+					<p>
+						My email is <span class="important-text">dev@agabt.com</span> or if you prefer, <a
+							href="mailto:dev@agabt.com">click here</a> to send me an email.
+					</p>
+				</div>
+
+				<div>
+					<h2><i class="bi bi-map-fill"></i> Website Map</h2>
+					<h3>This website</h3>
+
+					<div class="cards-container">
+						<div class="card">
+							<a href="#home" class="card-header">
+								<p><i class="bi bi-house-door"></i> Home</p>
+							</a>
+							<div class="card-content">
+								<p>This page, nothing less, nothing more</p>
+							</div>
+						</div>
+
+						<div class="card">
+							<a href="#about" class="card-header">
+								<p><i class="bi bi-file-person"></i> About</p>
+							</a>
+							<div class="card-content">
+								<p>I talk about myself, every detail to know is there</p>
+							</div>
+						</div>
+
+						<div class="card">
+							<a href="#about" class="card-header">
+								<p><i class="bi bi-code-slash"></i> Projects</p>
+							</a>
+							<div class="card-content">
+								<p>You can see some projects I did and test them</p>
+							</div>
+						</div>
+
+						<div class="card">
+							<a href="#about" class="card-header">
+								<p><i class="bi bi-suitcase-lg"></i> Portfolio</p>
+							</a>
+							<div class="card-content">
+								<p>You can see my CV in website style</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<h3>External Websites</h3>
+					<div class="cards-container">
+						<div class="card">
+							<a href="https://github.com/agabt" target="_blank" class="card-header">
+								<p><i class="bi bi-github"></i> My Github</p>
+							</a>
+							<div class="card-content">
+								<p>Link to my GitHub so you can see my repositories</p>
+							</div>
+						</div>
+
+						<div class="card">
+							<a href="https://instagram.com/anthonypizza10" target="_blank" class="card-header">
+								<p><i class="bi bi-instagram"></i> My Instagram</p>
+							</a>
+							<div class="card-content">
+								<p>My personal instagram, drop a ❤️ and follow 😁</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</section>
 
 		<section class="tab-item" id="about">
 			<header class="header-about">
@@ -66,7 +165,6 @@
 							and <span class="important-text">develop something awesome.</span>
 						</p>
 					</div>
-
 				</div>
 
 				<div>
