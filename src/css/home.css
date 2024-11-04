@@ -1,9 +1,13 @@
+/* Copied from about.css header about */
+
 .header-home {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
+/* Copied from about.css about-title */
 
 .home-title {
     margin-top: 2dvh;
@@ -21,6 +25,8 @@
     display: inline-block;
     width: 0;
 }
+
+/* Copied from about.css content about */
 
 .content-home {
     margin-top: 8dvh;
@@ -86,19 +92,21 @@
     }
 }
 
+/* Copied from about.css */
+
 @media screen and (max-width: 768px) {
+
+    /* * Original * */
     .card {
         width: 100%;
     }
 
-    .card-header:hover {
-        background-color: #3f3f3f;
-    }
-
+    /* From about.css */
     .home-title {
         font-size: 5.5rem;
     }
 
+    /* From about.css */
     .content-home {
         width: 100%;
     }
