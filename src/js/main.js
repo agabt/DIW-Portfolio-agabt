@@ -1,6 +1,10 @@
 import { $, $all } from "./querySelectors.js";
 
-const hash = window.location.hash === "" ? "#about" : window.location.hash;
+const allPages = ["#about", "#projects", "#portfolio"];
+const hash =
+	window.location.hash === "" || !allPages.includes(window.location.hash)
+		? "#about"
+		: window.location.hash;
 let $activeSection = $(hash);
 let $activeNavItem = $(`${hash}-nav`);
 $activeSection.classList.add("active");
