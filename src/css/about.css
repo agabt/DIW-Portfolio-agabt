@@ -1,3 +1,8 @@
+:root {
+    --github-color: #1a1a1a;
+    --instagram-color: radial-gradient(at bottom, #fcb045 5%, #fd1c1c 60%, #833ab4);
+}
+
 #myName {
     color: transparent;
     background: linear-gradient(45deg, yellow, lightyellow, yellow, lightyellow, yellow, lightyellow);
@@ -34,9 +39,9 @@
     align-items: center;
     justify-content: center;
     gap: 2dvh;
-    width: 65vw;
+    width: 65%;
 
-    & div {
+    &>div {
         width: 90%;
     }
 
@@ -71,6 +76,17 @@
     }
 }
 
+.background-github {
+    background-color: var(--github-color);
+}
+
+.background-instagram {
+    background: var(--instagram-color);
+    background-position-x: left;
+    background-position-y: bottom;
+    background-size: 200%;
+}
+
 @keyframes gradient {
     from {
         background-position: 100% 0%;
@@ -78,15 +94,5 @@
 
     to {
         background-position: 0% 0%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .about-title {
-        font-size: 5.5rem;
-    }
-
-    .content-about {
-        width: 100%;
     }
 }
