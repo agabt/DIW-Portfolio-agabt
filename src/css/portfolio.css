@@ -1,0 +1,223 @@
+.portfolio-about-me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 2vh;
+}
+
+.portfolio-about-me-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact-me-button-container {
+    width: 100%;
+}
+
+.contact-me-button {
+    background: linear-gradient(45deg, #111, #1d1d1d, #111, #1d1d1d, #111, #1d1d1d);
+    background-size: 200% 200%;
+
+    /* Animation located in about.css */
+    animation: gradient 3s linear infinite;
+
+    display: inline-block;
+    color: whitesmoke;
+    border: 4px solid #111;
+    padding: 12px 32px;
+    text-wrap: nowrap;
+    border-radius: 32px;
+    transition: scale .2s ease-in-out;
+}
+
+.big-text {
+    font-size: large;
+}
+
+.studies-parent-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    width: 95%;
+}
+
+.studies-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    width: 95%;
+
+    border-left: 3px solid gray;
+
+    gap: 5vh;
+
+    &>div {
+        position: relative;
+        width: 95%;
+    }
+
+    &>div::before {
+        position: absolute;
+        left: -5.4%;
+        top: 15%;
+        transform: translate(-50%, -50%);
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-color: yellow;
+        border-radius: 12px;
+    }
+
+    &>div:first-child::before {
+        background-color: rgb(233, 136, 25);
+        animation: pulsating 2s linear infinite;
+    }
+}
+
+.studies-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    &>div:first-child {
+        width: 40%;
+    }
+
+    &>div:last-child {
+        width: 60%;
+    }
+}
+
+.portfolio-projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5vh;
+}
+
+.portfolio-projects-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.portfolio-projects-image {
+    width: 40%;
+
+    &>img {
+        width: 100%;
+        border-radius: 16px;
+    }
+}
+
+.portfolio-projects-description {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+
+    &>* {
+        width: 100%;
+    }
+}
+
+.portfolio-projects-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@keyframes pulsating {
+    from {
+        box-shadow: none;
+        background-color: rgb(233, 136, 25);
+    }
+
+    50% {
+        box-shadow: 0 0 5px orange, 0 0 25px orange, 0 0 50px orange, 0 0 200px orange;
+        background-color: orange;
+    }
+
+    to {
+        box-shadow: none;
+        background-color: rgb(233, 136, 25);
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .content-portfolio {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content-portfolio {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .content-portfolio {
+        width: 95%;
+    }
+
+    .portfolio-projects-container {
+        gap: 8vh;
+    }
+
+    .portfolio-projects-info {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .portfolio-projects-image {
+        width: 100%;
+    }
+
+    .portfolio-projects-description {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .studies-container {
+        &>div::before {
+            /* Es una guarrada jajaja (si ves esto perdoname, lo intentaré cambiar la proxima vez) */
+            left: -5.7%;
+        }
+    }
+
+    .studies-info {
+        flex-direction: column;
+        align-items: start;
+
+        &>div:first-child {
+            width: 100%;
+        }
+
+        &>div:last-child {
+            width: 100%;
+        }
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .contact-me-button:hover {
+        scale: 1.1;
+        filter: brightness(120%);
+    }
+}
