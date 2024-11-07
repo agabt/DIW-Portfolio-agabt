@@ -1,6 +1,6 @@
 import { $, $all } from "./querySelectors.js";
 
-const hash = window.location.hash === "" ? "#home" : window.location.hash;
+const hash = window.location.hash === "" ? "#about" : window.location.hash;
 let $activeSection = $(hash);
 let $activeNavItem = $(`${hash}-nav`);
 $activeSection.classList.add("active");
@@ -24,16 +24,7 @@ window.addEventListener("hashchange", () => {
 // Auto Typing
 const autoText = new AutoTyping({
 	id: "auto-typed-text",
-	typeText: [
-		"User",
-		"Human",
-		"Student",
-		"Teacher",
-		"Unknown",
-		"Recruiter",
-		"Junior",
-		"Senior",
-	],
+	typeText: ["Developer", "User", "Human", "Student", "Junior"],
 	textColor: "#f5f5f5",
 	cursorColor: "#f5f5f5",
 }).init();
