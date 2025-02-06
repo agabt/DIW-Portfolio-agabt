@@ -24,16 +24,19 @@
     background: linear-gradient(45deg, #111, #1d1d1d, #111, #1d1d1d, #111, #1d1d1d);
     background-size: 200% 200%;
 
-    /* Animation located in about.css */
-    animation: gradient 3s linear infinite;
-
     display: inline-block;
     color: whitesmoke;
     border: 4px solid #111;
     padding: 12px 32px;
     text-wrap: nowrap;
     border-radius: 32px;
+
     transition: scale .2s ease-in-out;
+
+    @media (prefers-reduced-motion: no-preference) {
+        /* Animation located in about.css */
+        animation: gradient 3s linear infinite;
+    }
 }
 
 .big-text {

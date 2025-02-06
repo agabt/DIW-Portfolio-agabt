@@ -8,7 +8,10 @@
     background: linear-gradient(45deg, yellow, lightyellow, yellow, lightyellow, yellow, lightyellow);
     background-clip: text;
     background-size: 200% 200%;
-    animation: gradient 2s linear infinite;
+
+    @media (prefers-reduced-motion: no-preference) {
+        animation: gradient 2s linear infinite;
+    }
 }
 
 .about-title {
