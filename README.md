@@ -7,7 +7,7 @@ Repositorio para la practica de diseño de interfaces web, un portfolio personal
 -   3.1.5 Reading level - OK
 -   1.3.1 Info and relationships - Fixed - Used generic text "click here".
 -   1.4.8 Visual presentation - OK (N/A)
--   4.1.1 Parsing - Failed - Several errors (see https://validator.w3.org/nu/?doc=https%3A%2F%2Fagabt-portfolio.netlify.app)
+-   4.1.1 Parsing - Fixed - Several errors (see https://validator.w3.org/nu/?doc=https%3A%2F%2Fagabt-portfolio.netlify.app)
 -   3.1.1 Language of page - OK
 -   2.4.2 Page titled - Fixed - Doesn't update title tag based on the page
 -   1.4.4 Resize text - OK
