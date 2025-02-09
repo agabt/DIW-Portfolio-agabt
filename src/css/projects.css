@@ -98,21 +98,25 @@
 .clip-html {
     background-color: var(--html-color);
     border-color: var(--html-color-darker);
+    color: black;
 }
 
 .clip-js {
     background-color: var(--js-color);
     border-color: var(--js-color-darker);
+    color: black;
 }
 
 .clip-json {
     background-color: var(--json-color);
     border-color: var(--json-color-darker);
+    color: black;
 }
 
 .clip-css {
     background-color: var(--css-color);
     border-color: var(--css-color-darker);
+    color: black;
 }
 
 .clip-bootstrap {
@@ -129,11 +133,13 @@
 .clip-jquery {
     background-color: var(--jquery-color);
     border-color: var(--jquery-color-darker);
+    color: black;
 }
 
 .clip-sql {
     background-color: var(--sql-color);
     border-color: var(--sql-color-darker);
+    color: black;
 }
 
 .clip-php {

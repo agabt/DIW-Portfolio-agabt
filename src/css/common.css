@@ -115,6 +115,10 @@ a {
 	border: 2px solid black;
 	aspect-ratio: 2/1;
 	background-color: darkblue;
+
+	& p a {
+		color: rgb(125, 125, 255);
+	}
 }
 
 .card-header {
